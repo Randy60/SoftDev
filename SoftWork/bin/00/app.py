@@ -1,10 +1,13 @@
 from flask import Flask
+import random
 app = Flask(__name__)
 
 @app.route("/home")
 def home():
-    return "<h1>Sup Bro</h1>"
+    page = ""
+    page+="<h2> goddamn </h2>"   
+    return page
 
 if __name__ == "__main__":
     app.debug = True
-    app.run(host='0.0.0.0', port=8602)
+    app.run(host='0.0.0.0', port=8009)
