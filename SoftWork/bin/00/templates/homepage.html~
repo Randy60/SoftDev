@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<body style="background-color:darkgrey">
+<h1 style="font-size:200%">First html based page</h1>
+<h1 style="text-align:right">Heading on the other side</h1>
+<h1>Here's another line of text</h1>
