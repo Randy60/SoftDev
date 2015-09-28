@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<body style="background-color:lightgrey">
+<h1 style="text-align:center">JOHN CENA!</h1>
+<hr>
+<img src="johncena.jpg">
+<hr>
+<button><a href="home.html">Thanks for guessing</a>
