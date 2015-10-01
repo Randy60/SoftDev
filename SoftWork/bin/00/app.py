@@ -4,7 +4,7 @@ import random
 
 app = Flask(__name__)
 
-@app.route("/home")
+@app.route("/")
 def home():
    return render_template("home.html")
 
@@ -18,15 +18,15 @@ def JC():
         if button == "cancel":
             return render_template("JohnCena1.html")
         if isCena == "John Cena":
-            return render_template("JohnCena2.html")
+            return render_template("JohnCena2.html", image = "static/johncena.jpg")
         else:
-            return render_template("JohnCena1.html", error = "that's just not true")
+            return render_template("JohnCena1.html")
 
 @app.route("/morePicturesOfJohnCena")
 def JCmany():
-    r = random.randint(0,5)
-    
-    return render_template("JohnCena2.html")
+    r = random.randint(1,6)
+    im = "static/JC"+str(r)+".jpg"
+    return render_template("JohnCena2.html", image = im)
 
 if __name__ == "__main__":
     app.debug = True
